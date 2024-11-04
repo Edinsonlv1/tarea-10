@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 10</title>
+    <style>
+        #contenedor{
+            width: 700px;
+            height: auto;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-areas:"uno dos dos tres" 
+                                "uno cinco siete cuatro"
+                                "uno ocho seis cuatro";
+        grid-template-rows: 100px 100px 100px ;
+    gap: 10px;}
+        
+        .uno{
+            grid-area: uno;
+            background-color: blueviolet;
+            
+        }
+        .dos{
+            grid-area: dos; background-color: blueviolet;
+        }
+        .tres{
+            grid-area: tres; background-color: rgb(31, 28, 209);
+        }
+        .cuatro{
+            grid-area: cuatro; background-color: blueviolet;
+        }
+        .cinco{
+            grid-area: cinco; background-color: rgb(207, 226, 30);
+        }
+        .seis{
+            grid-area: seis; background-color: yellow;
+        }
+        .siete{
+            grid-area: siete; background-color: blue;
+        }
+        .ocho{
+            grid-area: ocho; background-color: blue;
+        }
+        .caja{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            align-content: center;
+            border: 1px solid black;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid 1</h1>
+    <div id="contenedor">
+        <div class="caja uno">UNO</div>
+        <div class="caja dos">DOS</div>
+        <div class="caja tres">TRES</div>
+        <div class="caja cuatro">CUATRO</div>
+        <div class="caja cinco">CINCO</div>
+        <div class="caja seis">SEIS</div>
+        <div class="caja siete">SIETE</div>
+        <div class="caja ocho">OCHO</div>
+
+    </div>
+</body>
+</html>
